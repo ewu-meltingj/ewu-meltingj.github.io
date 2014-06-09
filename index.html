@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link href='http://fonts.googleapis.com/css?family=Lustria|Lato' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lustria|Lato' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="css/normalize.css">
-
+	<link rel="stylesheet" href="css/base-type.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="stylesheet" href="css/inputs.css">
 </head>
 <body>
 	<input type="checkbox" id="checker" class="hide-keep-functionality">
@@ -14,7 +16,7 @@
 	<div class="main-wrapper">
 		<input type="radio" name="gardo" class="ga hide-keep-functionality" id="image1">
 		<label for="image1"></label>
-		<section tabindex="-1">
+		<section class="hide" tabindex="-1">
 			<div class="img-wrapper">
 				<img src="img/uno.jpg" alt="">
 			</div>
@@ -36,7 +38,7 @@
 
 		<input type="radio" name="gardo" class="ga hide-keep-functionality" id="image2">
 		<label for="image2"></label>
-		<section tabindex="-1">
+		<section class="hide" tabindex="-1">
 			<div class="img-wrapper">
 				<img src="img/dos.jpg" alt="">
 			</div>
@@ -58,7 +60,7 @@
 
 		<input type="radio" name="gardo" class="ga hide-keep-functionality" id="image3">
 		<label for="image3"></label>
-		<section tabindex="-1">
+		<section class="hide" tabindex="-1">
 			<div class="img-wrapper">
 				<img src="img/tres.jpg" alt="">
 			</div>
@@ -66,7 +68,6 @@
 			<div class="content-wrapper">
 				<div class="main-content">
 					<div class="rel-wrapper">
-						<span class="point"></span>
 						<div class="rel-box"></div>
 						<div class="rel-box"></div>
 						<div class="rel-box"></div>
@@ -82,7 +83,7 @@
 
 		<input type="radio" name="gardo" class="ga hide-keep-functionality" id="image4">
 		<label for="image4"></label>
-		<section tabindex="-1">
+		<section class="hide" tabindex="-1">
 			<div class="img-wrapper">
 				<img src="img/quattro.jpg" alt="">
 			</div>
@@ -90,13 +91,14 @@
 			<div class="content-wrapper">
 				<div class="main-content">
 					<div class="rel-wrapper">
-						<span class="point"></span>
 						<div class="rel-box"></div>
 						<div class="rel-box"></div>
 						<div class="rel-box"></div>
 						<div class="rel-box"></div>
-						<div class="rel-box">
+						<div class="rel-box relative">
 							<div class="rel-text">
+								<h2>hammer time</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, debitis, ex suscipit quas et harum repellendus maxime recusandae quos similique quidem at quisquam blanditiis. Consequuntur, aliquid ad eos id eveniet?</p>
 							</div>
 						</div>
 					</div>
@@ -104,12 +106,6 @@
 			</div>
 		</section>
 	</div>
-	<!-- end slidshow -->
-
-	<!-- <div class="footer">
-		<p>&copy; Jeremy Meltingtallow 2014</p>
-	</div> -->
-	<!-- end footer -->
 		
 </body>
 </html>
