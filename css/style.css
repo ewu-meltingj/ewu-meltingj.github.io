@@ -1,7 +1,7 @@
 
  /*transitions*/
-.hide {transition: opacity .2s ease-in, visibility .2s;}
-div.rel-box {transition: background .25s ease-in, top .25s ease-in, left .25s ease-in, width .25s ease-in, height .25s ease-in;}
+.hide {transition: opacity .2s ease-in}
+div.main-content {transition: background .25s ease-in, top .25s ease-in, left .25s ease-in, width .25s ease-in, height .25s ease-in, opacity .25s ease-in;}
 section{transition: padding .25s;}
 .main-content, .footer {transition: padding 1s;}
  /*end transitions*/
@@ -26,11 +26,12 @@ div.main-wrapper section {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height: 100%;
+	height: 100%;
 }
 
 div.img-wrapper {
 	position: fixed;
+	z-index: -1;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -50,20 +51,19 @@ div.img-wrapper img {
 div.content-wrapper {
 	position: relative;
 	top: 100px;
-	left: 0;
-	width: 100%;
-	height: 568px;
-}
-
-div.main-content {
 	margin: 0 auto;
 	width: 960px;
 }
 
-div.rel-wrapper {
+div.main-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(255,255,255, 1);
 	width: 100%;
-	position: relative;
-	height: 100%;
+	opacity: 1;
+	border: 1px solid rgba(0,0,0,0.3);
+	padding: 20px;
 }
 
 div.rel-box {
@@ -74,10 +74,7 @@ div.rel-box {
 	left: 0;
 	background: rgba(255,255,255, 1);
 	padding: 20px;
-}
-
-div.rel-text {
-	opacity: 1;
+	transition: z-index 2s;
 }
 div.relative {
 	position: relative;
