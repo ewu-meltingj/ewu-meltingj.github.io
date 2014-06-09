@@ -61,7 +61,7 @@ div.rel-text {
 	opacity: 1;
 	transition: opacity .2s ease-in, visibility .2s;
 }
-div.rel-children-wrapper, div.rel-sibling-wrapper {
+div.rel-wrapper {
 	width: 960px;
 	height: 593px;
 	position: relative;
@@ -75,74 +75,38 @@ div.rel-box {
 	left: 0;
 	border: 1px solid rgba(0,0,0,0.1);
 	background: rgba(245,245,245, 0.5);
-	transition: background .25s ease-in, top .25s ease-in, left .25s ease-in;
-	transition
+	transition: background .25s ease-in, top .25s ease-in, left .25s ease-in, width .25s ease-in, height .25s ease-in;
 }
-span.point {
-	position: absolute;
-	left: 970px;
-	top: 0;
-	height: 0px;
-	width: 0px;
-	transition: opacity .25s ease-in, height .25s ease-in, width .25s ease-in;
-	z-index: 22;
-}
-span.parent, span.child {
-	position: absolute;
-	opacity: 0;
-	transition: opacity .25s ease-in, top .25s ease-in, left .25s ease-in;
-	background: rgba(55,245,155, 0.7);
-	padding: .7em .5em .7em .5em;
-	line-height: 0;
-	border: 1px solid rgba(0,0,0,0.1);
-	color: white;
-}
-span.parent {
-	left: 982px;
-	top: -.4em;
-}
-span.child {
-	left: 982px;
-	top: -.4em;
-}
-span.point:after {content: url('../svg/points.svg');}
 
 
 /*relationships children behavior*/
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper .rel-box:not(:last-of-type) {background: rgba(55,245,155, 0.5);}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper .rel-box:last-of-type {background: rgba(240,240,240, 1);}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper .rel-box:nth-of-type(2) {top:5px; left: 5px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper .rel-box:nth-of-type(3) {top:13px; left: 13px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper .rel-box:nth-of-type(4) {top:34px; left: 34px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper .rel-box:nth-of-type(5) {top:89px; left: 89px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper span.point {
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .rel-box {
+	width: calc(100% - 99px);
+	height: calc(100% - 99px);
+}
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .rel-box:not(:last-of-type) {background: rgba(55,245,155, 0.5);}
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .rel-box:last-of-type {background: rgba(240,240,240, 1);}
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .rel-box:nth-of-type(2) {top:5px; left: 5px;}
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .rel-box:nth-of-type(3) {top:13px; left: 13px;}
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .rel-box:nth-of-type(4) {top:34px; left: 34px;}
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .rel-box:nth-of-type(5) {top:89px; left: 89px;}
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper span.point {
 	height: 89px;
 	width: 89px;
 	opacity: 1;
 }
-input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper span.parent, input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper span.child {
-	opacity: 1;
-	left: 1052px;
-	top: 89px;
+input[type=checkbox]:checked ~ .main-wrapper section .rel-wrapper .hide {
+	visibility: hidden;
+	display: none;
 }
-/*relationships Sibling behavior*/
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper .rel-box:not(:last-of-type) {background: rgba(55,245,155, 0.5);}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper .rel-box:last-of-type {background: rgba(240,240,240, 0.9);}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper .rel-box:nth-of-type(2) {left: 5px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper .rel-box:nth-of-type(3) {left: 13px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper .rel-box:nth-of-type(4) {left: 34px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper .rel-box:nth-of-type(5) {left: 89px;}
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper span.point {
-	height: 89px;
-	width: 89px;
-	opacity: 1;
+input[type=checkbox]:checked ~ .main-wrapper section h2 {
+	visibility: hidden;
+	display: none;
 }
-input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper span.parent, input[type=checkbox]:checked ~ .main-wrapper section .rel-sibling-wrapper span.child {
-	opacity: 1;
-	left: 1052px;
-	top: 89px;
+input[type=checkbox]:checked ~ .main-wrapper section .img-wrapper img {
+	visibility: hidden;
+	opacity: 0;
 }
-/*input[type=checkbox]:checked ~ .main-wrapper section .rel-children-wrapper .rel-text {visibility: hidden; opacity: 0}*/
 
 
 
