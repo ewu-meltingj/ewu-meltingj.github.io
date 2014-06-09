@@ -28,7 +28,7 @@ I tend to go for a 600px - 960px width max but using percentages
 @media only screen and (max-width:1190px){
 	div.content-wrapper {
 		width: 735px;
-		font-size: 80%;
+		font-size: 85%;
 	}
 }
 /*important*/

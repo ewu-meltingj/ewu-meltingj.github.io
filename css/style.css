@@ -1,4 +1,9 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
  /*transitions*/
 .hide {transition: opacity .2s ease-in}
 div.main-content {transition: background .25s ease-in, top .25s ease-in, left .25s ease-in, width .25s ease-in, height .25s ease-in, opacity .25s ease-in;}
@@ -52,7 +57,7 @@ div.content-wrapper {
 	position: relative;
 	top: 100px;
 	margin: 0 auto;
-	width: 1200px;
+	width: 960px;
 }
 div.main-content {
 	position: absolute;
@@ -64,6 +69,7 @@ div.main-content {
 	border-radius: 0px 0px 20px 20px;
 	padding: 20px;
 	width: calc(100% - 40px);
+	font-weight: 100;
 }
 div.relative {
 	position: relative;
@@ -75,10 +81,22 @@ div[class*=img-wrapper] {
 	background: #c12451;
 }
 
+.main-content h1:before,.main-content h1:after {
+}
 
+p[class*=contact-] {
+	margin-top: 0;
+	display: inline-block;
+	margin-right: 10px;
+}
 
-
-
+p[class*=contact-] span{
+	font-size: 1.15em;
+	margin-right: 3px;
+}
+p.neither {
+	margin-top: -5px;
+}
 
 
 
