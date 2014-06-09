@@ -58,9 +58,10 @@ div.main-content {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: rgba(255,255,255, 1);
+	background: #101112;
 	opacity: 1;
-	border: 1px solid rgba(0,0,0,0.3);
+	border-top: 1px solid #c12451;
+	border-radius: 0px 0px 20px 20px;
 	padding: 20px;
 	width: calc(100% - 40px);
 }
@@ -71,15 +72,8 @@ div.relative {
 /*end main window*/
 
 div[class*=img-wrapper] {
-	background: #444;
-	transition: background .3s ease;
+	background: #c12451;
 }
-
-
-
-
-
-
 
 
 

@@ -7,7 +7,7 @@ label:not(#logo) {
 	top: calc(50% - 24px);
 	width: 30px;
 	height: 48px;
-	background: #efefef;
+	background: #1d1f2b;
 	padding: 15px;
 	border-radius: 10px;
 	z-index: 9001;
@@ -33,17 +33,15 @@ section div[class*=img-wrapper] {
 	visibility: hidden;
 	opacity: 0;
 }
-section .main-content {
-	opacity: .75;
-	color: rgba(0,0,0, 0.25);
-}
+
 input[type=radio]:checked + label + section div[class*=img-wrapper] {
 	visibility: visible;
 	opacity: 1;
 }
 input[type=radio]:checked + label + section .main-content {
 	opacity: 1 !important;
-	color: rgba(0,0,0, 1);
+	color: #feffff;
+	background: #1d1f2b;
 	z-index: 9000;
 	top:89px !important;
 	left: 89px !important;
@@ -74,41 +72,35 @@ label#logo {
 }
 label#logo:before {content: url('../svg/happy.svg');}
 input[type=checkbox]:checked + label#logo:before {content: url('../svg/upset.svg');}
-input[type=checkbox]:checked ~ .main-wrapper section .main-content{width: calc(100% - 137px);}
+input[type=checkbox]:checked ~ .main-wrapper section .main-content{width: calc(100% - 137px);
+	box-shadow:
+		-1px -1px 0 #1d1f2b,
+		-2px -2px 0 #c12451,
+		-3px -3px 0 #1d1f2b,
+		-4px -4px 0 #c12451,
+		-5px -5px 0 #1d1f2b,
+		-6px -6px 0 #c12451,
+		-7px -7px 0 #1d1f2b,
+		-8px -8px 0 #c12451,
+		-9px -9px 0 #1d1f2b,
+		-10px -10px 0 #c12451,
+		-11px -11px 0 #1d1f2b,
+		-12px -12px 0 #c12451,
+		-13px -13px 0 #1d1f2b,
+		-14px -14px 0 #c12451,
+		-15px -15px 0 #1d1f2b,
+		-16px -16px 0 #c12451,
+		-17px -17px 0 #1d1f2b,
+		-18px -18px 0 #c12451,
+		-19px -19px 0 #1d1f2b,
+		-20px -20px 0 #c12451,
+		-21px -21px 0 #1d1f2b;
+}
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) .main-content {top:5px; left: 5px;}
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) .main-content {top:13px; left: 13px;}
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(4) .main-content {top:34px; left: 34px;}
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(5) .main-content {top:89px; left: 89px;}
-
-input[type=radio]:not(:nth-of-type(5)):checked ~ section:nth-of-type(5) .main-content {
-	top:34px; 
-	left: 34px;
-}
-input[type=radio]:not(:nth-of-type(4)):checked ~ section:nth-of-type(4) .main-content {
-	top:13px; 
-	left: 13px;
-}
-input[type=radio]:not(:nth-of-type(3)):checked ~ section:nth-of-type(3) .main-content {
-	top:5px; 
-	left: 5px;
-}
-input[type=radio]:not(:nth-of-type(2)):checked ~ section:nth-of-type(2) .main-content {
-	top:0px; 
-	left: 0px;
-}
-
-input[type=radio]:checked + label + section .img-wrapper-1 {
-	background: teal;
-}
-input[type=radio]:checked + label + section .img-wrapper-2 {
-	background: cornflowerblue;
-}
-input[type=radio]:checked + label + section .img-wrapper-3 {
-	background: magenta;
-}
-input[type=radio]:checked + label + section .img-wrapper-4 {
-	background: green;
-}
-input[type=radio]:checked + label + section .img-wrapper-5 {
-	background: purple;
-}
+input[type=radio]:not(:nth-of-type(5)):checked ~ section:nth-of-type(5) .main-content {top:34px; left: 34px;}
+input[type=radio]:not(:nth-of-type(4)):checked ~ section:nth-of-type(4) .main-content {top:13px; left: 13px;}
+input[type=radio]:not(:nth-of-type(3)):checked ~ section:nth-of-type(3) .main-content {top:5px; left: 5px;}
+input[type=radio]:not(:nth-of-type(2)):checked ~ section:nth-of-type(2) .main-content {top:0px; left: 0px;}
