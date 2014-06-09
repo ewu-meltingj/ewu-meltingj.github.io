@@ -101,15 +101,15 @@ p.date {
 	display: inline-block;
 	background: #000;
 }
-p.info {
+
+.clearfix:after {
+	visibility: hidden;
 	display: block;
-}
-p.info span {
-	background: #000;
-
-}
-
-
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
 
 
 

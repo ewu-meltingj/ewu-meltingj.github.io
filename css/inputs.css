@@ -34,6 +34,54 @@ input[type=checkbox]:checked ~ .main-wrapper section div[class*=img-wrapper] img
 	opacity: 0 !important;
 	visibility: hidden;
 }
+input[type=checkbox]:checked ~ .main-wrapper h3.date-square{
+	float: left;
+	position: relative;
+}
+input[type=checkbox]:checked ~ .main-wrapper h3.left{
+	box-shadow: 
+		1px 0 0 #c12451,
+		2px 0 0 #1d1f2b,
+		3px 0 0 #c12451,
+		4px 0 0 #1d1f2b,
+		5px 0 0 #c12451,
+		6px 0 0 #1d1f2b,
+		7px 0 0 #c12451,
+		8px 0 0 #1d1f2b,
+		9px 0 0 #c12451,
+		10px 0 0 #1d1f2b;
+
+	margin-right: 10px;
+}
+input[type=checkbox]:checked ~ .main-wrapper .date-square span{
+	display: table-cell;
+	background: #c12451;
+	width: 65px;
+	height: 65px;
+	vertical-align: middle;
+	text-align: center;
+}
+input[type=checkbox]:checked ~ .main-wrapper div.info {
+	width: calc(100% - 150px);
+	float: left;
+	margin-left: 10px;
+}
+input[type=checkbox]:checked ~ .main-wrapper label {
+	box-shadow:
+		-1px -1px 0 #1d1f2b,
+		-2px -2px 0 #c12451,
+		-3px -3px 0 #1d1f2b,
+		-4px -4px 0 #c12451,
+		-5px -5px 0 #1d1f2b,
+		-6px -6px 0 #c12451,
+		-7px -7px 0 #1d1f2b,
+		-8px -8px 0 #c12451,
+		-9px -9px 0 #1d1f2b,
+		-10px -10px 0 #c12451,
+		-11px -11px 0 #1d1f2b,
+		-12px -12px 0 #c12451,
+		-13px -13px 0 #1d1f2b;
+}
 section div[class*=img-wrapper] {
 	visibility: hidden;
 	opacity: 0;
