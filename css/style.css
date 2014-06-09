@@ -97,6 +97,22 @@ p[class*=contact-] span{
 p.neither {
 	margin-top: -5px;
 }
+p.date {
+	display: inline-block;
+	background: #000;
+}
+p.info {
+	display: block;
+}
+p.info span {
+	background: #000;
+
+}
+
+
+
+
+
 
 
 
