@@ -24,6 +24,11 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
 	opacity: 0;
 	top: 0 !important;
 	left: 0 !important;
+	background: rgba(255,255,255,0.8);
+	border-radius: 0;
+	border: none;
+	color: rgba(0,0,0,1);
+	font-weight: 400;
 }
 input[type=checkbox]:checked ~ .main-wrapper section div[class*=img-wrapper] img {
 	opacity: 0 !important;
