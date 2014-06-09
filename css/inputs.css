@@ -10,7 +10,7 @@ label:not(#logo) {
 	background: #efefef;
 	padding: 15px;
 	border-radius: 10px;
-	z-index: 1336;
+	z-index: 9001;
 	right: 20px;
 	moz-user-select: none;
 	-webkit-user-select: none;
@@ -41,7 +41,6 @@ input[type=radio]:checked + label + section .main-content {
 	opacity: 1 !important;
 	color: rgba(0,0,0, 1);
 	z-index: 9000;
-	width: 100%;
 	top:89px !important;
 	left: 89px !important;
 }
@@ -71,7 +70,7 @@ label#logo {
 }
 label#logo:before {content: url('../svg/happy.svg');}
 input[type=checkbox]:checked + label#logo:before {content: url('../svg/upset.svg');}
-input[type=checkbox]:checked ~ .main-wrapper section .main-content{width: calc(100% - 91px);}
+input[type=checkbox]:checked ~ .main-wrapper section .main-content{width: calc(100% - 137px);}
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) .main-content {top:5px; left: 5px;}
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) .main-content {top:13px; left: 13px;}
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(4) .main-content {top:34px; left: 34px;}

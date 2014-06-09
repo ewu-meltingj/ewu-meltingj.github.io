@@ -54,27 +54,15 @@ div.content-wrapper {
 	margin: 0 auto;
 	width: 960px;
 }
-
 div.main-content {
 	position: absolute;
 	left: 0;
 	top: 0;
 	background: rgba(255,255,255, 1);
-	width: 100%;
 	opacity: 1;
 	border: 1px solid rgba(0,0,0,0.3);
 	padding: 20px;
-}
-
-div.rel-box {
-	width: calc(100% - 2px);
-	height: calc(100% - 60px);
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgba(255,255,255, 1);
-	padding: 20px;
-	transition: z-index 2s;
+	width: calc(100% - 40px);
 }
 div.relative {
 	position: relative;
