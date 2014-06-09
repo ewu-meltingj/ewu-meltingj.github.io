@@ -29,7 +29,7 @@ div.main-wrapper section {
 	height: 100%;
 }
 
-div.img-wrapper {
+div[class*=img-wrapper] {
 	position: fixed;
 	z-index: -1;
 	top: 0;
@@ -39,7 +39,7 @@ div.img-wrapper {
 	overflow: hidden;
 }
 
-div.img-wrapper img {
+div[class*=img-wrapper] img {
 	position: absolute;
 	top: -9999px;
 	left: -9999px;
@@ -52,7 +52,7 @@ div.content-wrapper {
 	position: relative;
 	top: 100px;
 	margin: 0 auto;
-	width: 960px;
+	width: 1200px;
 }
 div.main-content {
 	position: absolute;
@@ -69,6 +69,23 @@ div.relative {
 	height: 100%;
 }
 /*end main window*/
+
+div[class*=img-wrapper] {
+	background: #444;
+	transition: background .3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
