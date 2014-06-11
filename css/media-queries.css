@@ -26,7 +26,7 @@
 	span.icon {margin-left: calc(50% - 45px); margin-bottom: 10px;}
 	span.hyphen{display: block; visibility: hidden; height: 0; width: 0;}
 }
-@media only screen and (max-width:672px){
+/*@media only screen and (max-width:672px){
 	div.content-wrapper {width: 415px;}
 	.full-step-four{width: calc(100% - 20px);}
 	input[type=checkbox]:checked ~ .main-wrapper .full-checked-four {width: calc(100% - 20px);}
@@ -41,8 +41,8 @@
 	input[type=checkbox]:checked ~ .main-wrapper .full-checked-five {width: calc(100% - 20px);}
 	.hide-step-five{display: none;visibility: hidden;}
 	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-five{display: none;visibility: hidden;}
-}
-@media only screen and (max-width:546px){
+}*/
+/*@media only screen and (max-width:546px){
 	div.content-wrapper {width: 337px;}
 	.full-step-six{width: calc(100% - 20px);}
 	input[type=checkbox]:checked ~ .main-wrapper .full-checked-six {width: calc(100% - 20px);}
@@ -69,7 +69,7 @@
 	input[type=checkbox]:checked ~ .main-wrapper .full-checked-nine {width: calc(100% - 20px);}
 	.hide-step-nine{display: none;visibility: hidden;}
 	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-nine{display: none;visibility: hidden;}
-}
+}*/
 
 
 
