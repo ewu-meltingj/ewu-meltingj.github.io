@@ -45,6 +45,24 @@ input[type=checkbox]:checked ~ .main-wrapper span.icon {
 input[type=checkbox]:checked ~ .main-wrapper .contact-stuff {
 	background: none;
 }
+input[type=checkbox]:checked ~ .main-wrapper .footer {
+	display: none;
+	visibility: hidden;
+}
+input[type=checkbox]:checked ~ .main-wrapper .bio-image {
+	display: none;
+	visibility: hidden;
+}
+input[type=checkbox]:checked ~ .main-wrapper .full {
+	width: calc(100% - 20px);
+}
+input[type=checkbox]:checked ~ .main-wrapper .half {
+	width: calc(50% - 25px);
+	float: left;
+}
+input[type=checkbox]:checked ~ .main-wrapper .half:first-of-type {
+	padding-right: 20px;
+}
 
 
 input[type=checkbox]:checked ~ .main-wrapper label {

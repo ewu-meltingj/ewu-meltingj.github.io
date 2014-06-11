@@ -30,10 +30,6 @@ I tend to go for a 600px - 960px width max but using percentages
 		width: 735px;
 		font-size: 85%;
 	}
-	img.bio-image {
-		display: none;
-		visibility: hidden;
-	}
 	div.three-fifths {
 		width: calc(100% - 20px);
 	}
@@ -64,6 +60,11 @@ I tend to go for a 600px - 960px width max but using percentages
 @media only screen and (max-width:786px){
 	div.content-wrapper {
 		width: 486px;
+	}
+	.half {
+		width: inherit !important;
+		float: none !important;
+		padding: 0 !important;
 	}
 }
 @media only screen and (max-width:672px){
