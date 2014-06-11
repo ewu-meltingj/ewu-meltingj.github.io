@@ -9,6 +9,7 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
 	border: 10px solid #fff;
 }
 
+input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:checked) + label + section .bio-image {opacity: 0.2;}
 input[type=checkbox]:checked ~ .main-wrapper span.icon {background: #c12451;}
 input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
 input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
