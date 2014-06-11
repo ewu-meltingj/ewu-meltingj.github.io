@@ -1,0 +1,85 @@
+input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
+	opacity: 0;
+	top: 0 !important;
+	left: 0 !important;
+	background: rgba(255,255,255,0.95);
+	border-radius: 0;
+	color: rgba(0,0,0,1);
+	font-weight: 400;
+	border: 10px solid #fff;
+}
+
+input[type=checkbox]:checked ~ .main-wrapper span.icon {background: #c12451;}
+input[type=checkbox]:checked ~ .main-wrapper .contact-stuff {background: none;}
+input[type=checkbox]:checked ~ .main-wrapper .hide-in-cool-mode {
+	display: none;
+	visibility: hidden;
+}
+input[type=radio]:checked + label + section .main-content {
+	opacity: 1 !important;
+	color: #fcfcfc;
+	background: #1d1f2b;
+	z-index: 9000;
+	top:89px !important;
+	left: 89px !important;
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:not(:checked) + label + section {
+	display: none;
+}
+input[type=radio]:checked ~ label:not(#logo) {z-index: -1;}
+input[type=radio]:first-of-type:checked ~ label:last-of-type:not(#logo) {z-index: 9000;}
+/*clicked crazy face*/
+input[type=checkbox]:checked + label#logo:before {content: url('../svg/upset.svg');}
+/*add styling to button when crazy face*/
+input[type=checkbox]:checked ~ .main-wrapper label {
+	box-shadow:
+		-1px -1px 0 #1d1f2b,
+		-2px -2px 0 #c12451,
+		-3px -3px 0 #1d1f2b,
+		-4px -4px 0 #c12451,
+		-5px -5px 0 #1d1f2b,
+		-6px -6px 0 #c12451,
+		-7px -7px 0 #1d1f2b,
+		-8px -8px 0 #c12451,
+		-9px -9px 0 #1d1f2b,
+		-10px -10px 0 #c12451,
+		-11px -11px 0 #1d1f2b,
+		-12px -12px 0 #c12451,
+		-13px -13px 0 #1d1f2b;
+}
+/*decrese width to compensate for faux 3d plud add box shadwos for cool feel*/
+input[type=checkbox]:checked ~ .main-wrapper section .main-content{
+	width: calc(100% - 137px);
+	box-shadow:
+		-1px -1px 0 #1d1f2b,
+		-2px -2px 0 #c12451,
+		-3px -3px 0 #1d1f2b,
+		-4px -4px 0 #c12451,
+		-5px -5px 0 #1d1f2b,
+		-6px -6px 0 #c12451,
+		-7px -7px 0 #1d1f2b,
+		-8px -8px 0 #c12451,
+		-9px -9px 0 #1d1f2b,
+		-10px -10px 0 #c12451,
+		-11px -11px 0 #1d1f2b,
+		-12px -12px 0 #c12451,
+		-13px -13px 0 #1d1f2b,
+		-14px -14px 0 #c12451,
+		-15px -15px 0 #1d1f2b,
+		-16px -16px 0 #c12451,
+		-17px -17px 0 #1d1f2b,
+		-18px -18px 0 #c12451,
+		-19px -19px 0 #1d1f2b,
+		-20px -20px 0 #c12451,
+		-21px -21px 0 #1d1f2b;
+}
+/*rotating content*/
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) .main-content {top:5px; left: 5px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) .main-content {top:13px; left: 13px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(4) .main-content {top:34px; left: 34px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(5) .main-content {top:89px; left: 89px;}
+input[type=radio]:not(:nth-of-type(5)):checked ~ section:nth-of-type(5) .main-content {top:34px; left: 34px;}
+input[type=radio]:not(:nth-of-type(4)):checked ~ section:nth-of-type(4) .main-content {top:13px; left: 13px;}
+input[type=radio]:not(:nth-of-type(3)):checked ~ section:nth-of-type(3) .main-content {top:5px; left: 5px;}
+input[type=radio]:not(:nth-of-type(2)):checked ~ section:nth-of-type(2) .main-content {top:0px; left: 0px;}
+/*end rotating content

@@ -1,99 +1,77 @@
-/*background media*/
-@media screen and (orientation:portrait) {
-	div[class*=img-wrapper] img {
-		min-height: 100%;
-	}
-}
-@media screen and (orientation:landscape){
-	/* Landscape styles */
-	@media (min-width:0px){
-		div[class*=img-wrapper] img {
-			min-height: 100%;
-		}
-	}
-	@media (min-width:1280px){
-		div[class*=img-wrapper] img {
-			min-width: 100%;
-		}
-	}
-}
-/*end background media*/
-
-
-/*320*/
-/* default styles here for older browsers. 
-I tend to go for a 600px - 960px width max but using percentages
-*/
-/*answer from http://stackoverflow.com/users/1844811/beneto*/
 @media only screen and (max-width:1190px){
-	div.content-wrapper {
-		width: 735px;
-		font-size: 85%;
-	}
-	div.three-fifths {
-		width: calc(100% - 20px);
-	}
+	div.content-wrapper {width: 900px;}
+	.full-step-one {width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-one {width: calc(100% - 20px);}
+	.hide-step-one {display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-one{display: none;visibility: hidden;}
+	.clearfix-step-one{ display: block; }.clearfix-step-one:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 }
-/*important*/
 @media only screen and (max-width:970px){ 
-	div.content-wrapper {
-		width: 600px;
-	}
-	label:not(#logo) {
-		width: 19px;
-		height: 30px;
-		right: 5px;
-	}
-	label#logo {
-		top: 10px;
-		left: 10px;
-		height: 62px;
-		width: 62px;
-		-moz-border-radius: 31px;
-		-webkit-border-radius: 31px;
-		border-radius: 31px;
-	}
-	.one-half {
-		width: calc(100% - 20px);
-	}
+	div.content-wrapper {width: 600px;}
+	.full-step-two{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-two {width: calc(100% - 20px);}
+	.hide-step-two{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-two{display: none;visibility: hidden;}
+	.clearfix-step-two{ display: block; }.clearfix-step-two:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+	.bio-image{height: 310px;}
 }
 @media only screen and (max-width:786px){
-	div.content-wrapper {
-		width: 486px;
-	}
-	.half {
-		width: inherit !important;
-		float: none !important;
-		padding: 0 !important;
-	}
+	div.content-wrapper {width: 486px;}
+	.full-step-three{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-three {width: calc(100% - 20px);}
+	.hide-step-three{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-three{display: none;visibility: hidden;}
+	.clearfix-step-three{ display: block; }.clearfix-step-three:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+	.bio-image{height: 330px;}
+	span.icon {margin-left: calc(50% - 45px); margin-bottom: 10px;}
+	span.hyphen{display: block; visibility: hidden; height: 0; width: 0;}
 }
 @media only screen and (max-width:672px){
-	div.content-wrapper {
-		width: 415px;
-	}
+	div.content-wrapper {width: 415px;}
+	.full-step-four{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-four {width: calc(100% - 20px);}
+	.hide-step-four{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-four{display: none;visibility: hidden;}
+	.clearfix-step-four{ display: block; }.clearfix-step-four:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+	.bio-image{height: 360px;}
 }
 @media only screen and (max-width:596px){
-	div.content-wrapper {
-		width: 368px;
-	}
+	div.content-wrapper {width: 368px;}
+	.full-step-five{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-five {width: calc(100% - 20px);}
+	.hide-step-five{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-five{display: none;visibility: hidden;}
 }
 @media only screen and (max-width:546px){
-	div.content-wrapper {
-		width: 337px;
-	}
+	div.content-wrapper {width: 337px;}
+	.full-step-six{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-six {width: calc(100% - 20px);}
+	.hide-step-six{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-six{display: none;visibility: hidden;}
 }
 @media only screen and (max-width:510px){
-	div.content-wrapper {
-		width: 315px;
-	}
+	div.content-wrapper {width: 315px;}
+	.full-step-seven{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-seven {width: calc(100% - 20px);}
+	.hide-step-seven{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-seven{display: none;visibility: hidden;}
 }
 @media only screen and (max-width:486px){
-	div.content-wrapper {
-		width: 300px;
-	}
+	div.content-wrapper {width: 300px;}
+	.full-step-eight{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-eight {width: calc(100% - 20px);}
+	.hide-step-eight{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-eight{display: none;visibility: hidden;}
 }
 @media only screen and (max-width:470px){
-	div.content-wrapper {
-		width: 290px;
-	}
+	div.content-wrapper {width: 290px;}
+	.full-step-nine{width: calc(100% - 20px);}
+	input[type=checkbox]:checked ~ .main-wrapper .full-checked-nine {width: calc(100% - 20px);}
+	.hide-step-nine{display: none;visibility: hidden;}
+	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-nine{display: none;visibility: hidden;}
 }
+
+
+
+
+
