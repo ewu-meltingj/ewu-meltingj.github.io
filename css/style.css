@@ -105,7 +105,7 @@ p.date {
 .bio-image {
 	height: 100%;
 }
-span.school-1, span.school-2, span.school-3 {
+span.icon {
 	width: 90px;
 	height: 90px;
 	padding: 8px;
@@ -115,31 +115,33 @@ span.school-1, span.school-2, span.school-3 {
 	position: relative;
 	margin-right: 15px;
 }
-span.school-1:after, span.school-2:after, span.school-3:after{
+span.icon:after{
 	position: absolute;
 	top: 18px;
 	left: 9px;
 	display: block;
-	content: url('../svg/bldg1.svg');
 }
-span.school-2:after{content: url('../svg/bldg2.svg');}
+span.work-1:after{content: url('../svg/work1.svg');}
+span.work-2:after{content: url('../svg/work2.svg');}
+span.work-3:after{content: url('../svg/work3.svg');}
+span.school-1:after{content: url('../svg/bldg1.svg');}
 span.school-2:after{content: url('../svg/bldg2.svg');}
 span.school-3:after{content: url('../svg/bldg3.svg');}
 
 
-.education-col {
+.education-col, .work-col {
 	margin-bottom: 20px;
 }
-.education-col h3 {
+.education-col h3, .work-col h3 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-weight: 400;
 }
-.education-col p {
+.education-col p, .work-col  p {
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
-.education-col span:first-of-type {
+.education-col span:first-of-type, .work-col span:first-of-type {
 	float: left;
 }
 .light {
