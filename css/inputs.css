@@ -24,17 +24,21 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
 	opacity: 0;
 	top: 0 !important;
 	left: 0 !important;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.95);
 	border-radius: 0;
-	border: none;
 	color: rgba(0,0,0,1);
 	font-weight: 400;
+	border: 10px solid #fff;
 }
 input[type=checkbox]:checked ~ .main-wrapper section div[class*=img-wrapper] img {
 	opacity: 0 !important;
 	visibility: hidden;
 }
-input[type=checkbox]:checked ~ .main-wrapper h3.date-square{
+
+input[type=checkbox]:checked ~ .main-wrapper section div[class*=img-wrapper] {
+	background: #c12451;
+}
+/*input[type=checkbox]:checked ~ .main-wrapper h3.date-square{
 	float: left;
 	position: relative;
 }
@@ -65,7 +69,7 @@ input[type=checkbox]:checked ~ .main-wrapper div.info {
 	width: calc(100% - 150px);
 	float: left;
 	margin-left: 10px;
-}
+}*/
 input[type=checkbox]:checked ~ .main-wrapper label {
 	box-shadow:
 		-1px -1px 0 #1d1f2b,

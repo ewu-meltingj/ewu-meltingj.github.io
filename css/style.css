@@ -67,7 +67,7 @@ div.main-content {
 	opacity: 1;
 	border-top: 1px solid #c12451;
 	border-radius: 0px 0px 20px 20px;
-	padding: 20px;
+	/*padding: 20px;*/
 	width: calc(100% - 40px);
 	font-weight: 100;
 }
@@ -77,40 +77,133 @@ div.relative {
 }
 /*end main window*/
 
-div[class*=img-wrapper] {
-	background: #c12451;
+.contact-stuff {
+	background: #dedede;
+	width: calc(100% - 20px);
+	padding: 10px 10px 0 10px;
 }
-
-.main-content h1:before,.main-content h1:after {
-}
-
-p[class*=contact-] {
+p.contact {
 	margin-top: 0;
 	display: inline-block;
 	margin-right: 10px;
+	line-height: .5em;
 }
 
-p[class*=contact-] span{
+p.contact span{
 	font-size: 1.15em;
 	margin-right: 3px;
 }
-p.neither {
-	margin-top: -5px;
+p.contact span:not(:first-of-type){
+	margin-left: 10px;
 }
 p.date {
 	display: inline-block;
 	background: #000;
 }
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	}
 
+.bio-image {
+	height: 100%;
+}
+span.school-1, span.school-2, span.school-3 {
+	width: 90px;
+	height: 90px;
+	padding: 8px;
+	background: #dedede;
+	border-radius: 65px;
+	display: inline-block;
+	position: relative;
+	margin-right: 15px;
+}
+span.school-1:after, span.school-2:after, span.school-3:after{
+	position: absolute;
+	top: 18px;
+	left: 9px;
+	display: block;
+	content: url('../svg/bldg1.svg');
+}
+span.school-2:after{content: url('../svg/bldg2.svg');}
+span.school-2:after{content: url('../svg/bldg2.svg');}
+span.school-3:after{content: url('../svg/bldg3.svg');}
+
+
+.education-col {
+	margin-bottom: 20px;
+}
+.education-col h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+.education-col p {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.education-col span:first-of-type {
+	float: left;
+}
+.light {
+	font-weight: 300;
+}
+
+
+
+
+/*grid*/
+.one-fifth {
+	width: calc(20% - 25px);
+}
+.one-quarter {
+	width: calc(25% - 25px);
+}
+.three-quarter {
+	width: calc(75% - 25px);
+}
+.one-third {
+	width: calc(33.333333333% - 30px);
+}
+.one-half {
+	width: calc(50% - 25px);
+}
+.three-fifths {
+	width: calc(60% - 25px);
+}
+.two-fifths {
+	width: calc(40% - 25px);
+}
+.full-width {
+	width: calc(100% - 20px);
+}
+.one-third, .one-half, .three-fifths, .two-fifths, .full-width, .one-quarter, .three-quarter, .one-fifth {
+	float: left;
+	overflow: hidden;
+	padding: 0 10px 0 10px;
+}
+div.one-third, div.one-half, div.three-fifths, div.two-fifths, div.full-width, div.one-quarter, div.three-quarter, div.one-fifth {
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 
 
 
