@@ -60,6 +60,9 @@ div.relative {
 .info-header span:not(:last-of-type) {
   margin-right: 5px;
 }
+.hammer {
+  width: 200px;
+}
 
 .bio-image {
 	height: 300px;
