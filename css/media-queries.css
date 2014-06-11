@@ -35,7 +35,7 @@ I tend to go for a 600px - 960px width max but using percentages
 		visibility: hidden;
 	}
 	div.three-fifths {
-		width: 100%
+		width: calc(100% - 20px);
 	}
 }
 /*important*/
@@ -56,6 +56,9 @@ I tend to go for a 600px - 960px width max but using percentages
 		-moz-border-radius: 31px;
 		-webkit-border-radius: 31px;
 		border-radius: 31px;
+	}
+	.one-half {
+		width: calc(100% - 20px);
 	}
 }
 @media only screen and (max-width:786px){

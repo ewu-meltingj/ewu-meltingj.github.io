@@ -38,38 +38,15 @@ input[type=checkbox]:checked ~ .main-wrapper section div[class*=img-wrapper] img
 input[type=checkbox]:checked ~ .main-wrapper section div[class*=img-wrapper] {
 	background: #c12451;
 }
-/*input[type=checkbox]:checked ~ .main-wrapper h3.date-square{
-	float: left;
-	position: relative;
-}
-input[type=checkbox]:checked ~ .main-wrapper h3.left{
-	box-shadow: 
-		1px 0 0 #c12451,
-		2px 0 0 #1d1f2b,
-		3px 0 0 #c12451,
-		4px 0 0 #1d1f2b,
-		5px 0 0 #c12451,
-		6px 0 0 #1d1f2b,
-		7px 0 0 #c12451,
-		8px 0 0 #1d1f2b,
-		9px 0 0 #c12451,
-		10px 0 0 #1d1f2b;
 
-	margin-right: 10px;
-}
-input[type=checkbox]:checked ~ .main-wrapper .date-square span{
-	display: table-cell;
+input[type=checkbox]:checked ~ .main-wrapper span.icon {
 	background: #c12451;
-	width: 65px;
-	height: 65px;
-	vertical-align: middle;
-	text-align: center;
 }
-input[type=checkbox]:checked ~ .main-wrapper div.info {
-	width: calc(100% - 150px);
-	float: left;
-	margin-left: 10px;
-}*/
+input[type=checkbox]:checked ~ .main-wrapper .contact-stuff {
+	background: none;
+}
+
+
 input[type=checkbox]:checked ~ .main-wrapper label {
 	box-shadow:
 		-1px -1px 0 #1d1f2b,
@@ -97,7 +74,7 @@ input[type=radio]:checked + label + section div[class*=img-wrapper] {
 }
 input[type=radio]:checked + label + section .main-content {
 	opacity: 1 !important;
-	color: #feffff;
+	color: #fcfcfc;
 	background: #1d1f2b;
 	z-index: 9000;
 	top:89px !important;

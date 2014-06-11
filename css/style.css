@@ -106,10 +106,10 @@ p.date {
 	height: 100%;
 }
 span.icon {
-	width: 90px;
-	height: 90px;
-	padding: 8px;
-	background: #dedede;
+	width: 80px;
+	height: 80px;
+	padding: 14px;
+	background: rgba(200,200,200,0.5);
 	border-radius: 65px;
 	display: inline-block;
 	position: relative;
@@ -117,8 +117,8 @@ span.icon {
 }
 span.icon:after{
 	position: absolute;
-	top: 18px;
-	left: 9px;
+	top: 20px;
+	left: 16px;
 	display: block;
 }
 span.work-1:after{content: url('../svg/work1.svg');}
@@ -184,7 +184,9 @@ span.school-3:after{content: url('../svg/bldg3.svg');}
 div.one-third, div.one-half, div.three-fifths, div.two-fifths, div.full-width, div.one-quarter, div.three-quarter, div.one-fifth {
 	padding: 10px;
 }
-
+.hello-header {
+	margin-bottom: 0px;
+}
 
 
 
