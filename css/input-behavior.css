@@ -11,6 +11,7 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
 
 input[type=checkbox]:checked ~ .main-wrapper span.icon {background: #c12451;}
 input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
+input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
 input[type=checkbox]:checked ~ .main-wrapper .hide-in-cool-mode {
 	display: none;
 	visibility: hidden;
