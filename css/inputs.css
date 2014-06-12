@@ -18,7 +18,7 @@ label:not(#logo) {
 	cursor: pointer;
 }
 label:not(#logo):before {
-	content: url('../svg/right2.svg');
+	content: url('../svg/right.svg');
 }
 
 /* input logo clicker */
@@ -32,7 +32,7 @@ label#logo {
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-	z-index: 1337;
+	z-index: 9999;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
