@@ -54,14 +54,11 @@ div.relative {
   margin-top: 0;
   padding: 10px;
 }
-.info-header span:not(:first-of-type):not(:last-of-type) {
+span[class*="entypo-"]:not(:first-of-type):first-line{
   margin-left: 10px;
 }
-.info-header span:not(:last-of-type) {
+span[class*="entypo-"]{
   margin-right: 5px;
-}
-.hammer {
-  width: 200px;
 }
 
 .bio-image {
