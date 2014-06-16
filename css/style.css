@@ -5,6 +5,7 @@
  /*transitions*/
 .hide {transition: opacity .2s ease-in}
 div.main-content {transition: background .25s ease-in, top .25s ease-in, left .25s ease-in, width .25s ease-in, height .25s ease-in, opacity .25s ease-in;}
+label[for*="image-"] {transition: background .25s ease-in, top .25s ease-in, right .25s ease-in, width .25s ease-in, height .25s ease-in, opacity .25s ease-in;}
 section{transition: padding .25s;}
 .main-content, .footer {transition: padding 1s;}
  /*end transitions*/

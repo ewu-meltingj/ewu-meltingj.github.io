@@ -1,24 +1,17 @@
-input globals*/
+/*input globals*/
 .hide-keep-functionality {position: absolute;top: -9999px;left: -9999px;z-index: 1337;}
 
 /* input right clicker */
-label:not(#logo) {
-	position: fixed;
-	top: calc(50% - 24px);
-	width: 30px;
-	height: 48px;
-	background: #1d1f2b;
-	padding: 15px;
-	border-radius: 10px;
+label[for*="image-"] {
+	position: absolute;
 	z-index: 9001;
-	right: 20px;
+	font-size: 1.125em;
+	width: 100px;
+	text-align: center;
 	moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	cursor: pointer;
-}
-label:not(#logo):before {
-	content: url('../svg/right.svg');
 }
 
 /* input logo clicker */
