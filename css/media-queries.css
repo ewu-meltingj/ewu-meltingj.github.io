@@ -14,7 +14,6 @@
 	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-two{display: none;visibility: hidden;}
 	.clearfix-step-two{ display: block; }.clearfix-step-two:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 	/*end defaults*/
-	span.hyphen-header{display: block; visibility: hidden; height: 0; width: 0;}
 
 }
 @media only screen and (max-width:786px){
@@ -24,10 +23,28 @@
 	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-three{display: none;visibility: hidden;}
 	.clearfix-step-three{ display: block; }.clearfix-step-three:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 	/*end defaults*/
-	span.hyphen{display: block; visibility: hidden; height: 0; width: 0;}
+	span.hyphen-2{display: block; visibility: hidden; height: 0; width: 0;}
+	span.hyphen-header{display: block; visibility: hidden; height: 0; width: 0;}
+}
+@media only screen and (max-width:700px){
+	.full-step-four{width: calc(100% - 20px);}
+	.hide-step-four{display: none;visibility: hidden;}
+}
+@media only screen and (max-width:600px){
+	.full-step-five{width: calc(100% - 20px);}
+	span.hyphen-2{display: inline; visibility: visible; height: auto; width: auto;}
+}
+/*575*/
+@media only screen and (max-width:575px){
+	input[type=checkbox]:not(:checked) ~ div.main-wrapper, input[type=checkbox]:not(:checked) ~ div.main-wrapper section {top: 30px;}
+	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {top: -78px; right: 20px;}
+	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {top: -78px; right: 120px;}
+	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(4) label[for*="image-"]:after {border-right: 10px solid transparent;width: calc(100% - 10px);}
+	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(3) label[for*="image-"]:after {border-left: 10px solid transparent;width: calc(100% - 10px);}
+	input[type=checkbox]:not(:checked) ~ .main-wrapper label#logo {top: -100px;}
 }
 @media only screen and (max-width:560px){
-	label[for*="image-"] {font-size: 70%;}
+	/*label[for*="image-"] {font-size: 70%;}
 	div.content-wrapper {min-width: 430px;}
 	label[for*="image-"] {width: 70px;}
 	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {right: 70px;}
@@ -48,7 +65,7 @@
 	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(3)):checked ~
 	input[type=radio]:nth-of-type(3) + section label[for*="image-"] {top: -29px;}
 	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(2)):checked ~
-	input[type=radio]:nth-of-type(2) + section label[for*="image-"] {top: -37px;}
+	input[type=radio]:nth-of-type(2) + section label[for*="image-"] {top: -37px;}*/
 }
 @media only screen and (max-width:803px){
 	input[type=checkbox]:not(:checked) ~ .main-wrapper .hex-wrapper .hex-group:nth-of-type(4) {margin-top: -105px;margin-left: 52px;}

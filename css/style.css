@@ -70,21 +70,22 @@ span[class*="entypo-"]{
 }
 
 /*bio svg*/
+
 span.icon {
-	width: 65px;
-	height: 65px;
+	width: 75px;
+	height: 75px;
+  border-radius: 40px;
 	background: rgba(200,200,200,0.5);
-	border-radius: 35px;
   display: inline-block;
   float: left;
   margin-right: 10px;
 }
-span[class*="tree-item-1"] {background: url(../svg/bldg1.svg), #ddd;}
-span[class*="tree-item-2"] {background: url(../svg/bldg2.svg), #ddd;}
-span[class*="tree-item-3"] {background: url(../svg/bldg3.svg), #ddd;}
-span[class*="tree-item-4"] {background: url(../svg/work1.svg), #ddd;}
-span[class*="tree-item-5"] {background: url(../svg/work2.svg), #ddd;}
-span[class*="tree-item-6"] {background: url(../svg/work3.svg), #ddd;}
+span[class*="tree-item-1"] {background: url(../svg/bldg1.svg), #88c3ad;}
+span[class*="tree-item-2"] {background: url(../svg/bldg2.svg), #88c3ad;}
+span[class*="tree-item-3"] {background: url(../svg/bldg3.svg), #88c3ad;}
+span[class*="tree-item-4"] {background: url(../svg/work1.svg), #88c3ad;}
+span[class*="tree-item-5"] {background: url(../svg/work2.svg), #88c3ad;}
+span[class*="tree-item-6"] {background: url(../svg/work3.svg), #88c3ad;}
 
 span[class*="tree-item-"] {
   background-size: contain;
@@ -94,7 +95,7 @@ span[class*="tree-item-"] {
 .tree-item-info {
   display: inline-block;
   float: left;
-  width: calc(100% - 75px);
+  width: calc(100% - 85px);
 }
 /*end bio svg*/
 
@@ -152,7 +153,7 @@ p.light {
 .hex-wrapper .hexagon {
   width: 100px;
   height: 55px;
-  background: #000;
+  background: #88c3ad;
   position: relative;
   margin-bottom: 111px;
 }
@@ -168,7 +169,7 @@ p.light {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 25px solid #000;
+  border-bottom: 25px solid #88c3ad;
 }
 .hex-wrapper .hexagon:after {
   content: "";
@@ -179,7 +180,7 @@ p.light {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 25px solid #000;
+  border-top: 25px solid #88c3ad;
 }
 .down-1-row {
   padding-top: 166px;
