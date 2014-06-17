@@ -24,7 +24,6 @@
 	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-three{display: none;visibility: hidden;}
 	.clearfix-step-three{ display: block; }.clearfix-step-three:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 	/*end defaults*/
-	span.icon {margin-left: calc(50% - 45px); margin-bottom: 10px;}
 	span.hyphen{display: block; visibility: hidden; height: 0; width: 0;}
 }
 @media only screen and (max-width:560px){
