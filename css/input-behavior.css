@@ -33,37 +33,39 @@ input[type=checkbox]:checked ~ .main-wrapper section label[for*="image-"] {
 	border: 1px solid #1d1f2b;
 	border-bottom: 0px;
 	border-radius: 5px 5px 0 0;
+	z-index: 9001;
 }
-input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"] {top: 55px;}
-input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {top: -50px; right: 359px;}
-input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {top: -42px; right: 301px;}
-input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {top: -21px; right: 231px;}
-input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {top: 0px; right: 160px;}
-input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {top: 55px;right: 55px;}
+input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"] {top: 62px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {top: -43px; right: 359px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {top: -35px; right: 301px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {top: -14px; right: 231px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {top: 7px; right: 160px;}
+input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {top: 62px;right: 55px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(5):checked + section label[for*="image-"] {right: 55px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(4):checked + section label[for*="image-"] {right: 105px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(3):checked + section label[for*="image-"] {right: 155px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(2):checked + section label[for*="image-"] {right: 205px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(1):checked + section label[for*="image-"] {right: 255px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(5)):checked ~
-input[type=radio]:nth-of-type(5) + section label[for*="image-"] {top: 0px;right: 110px;}
+input[type=radio]:nth-of-type(5) + section label[for*="image-"] {top: 7px;right: 110px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(4)):checked ~
-input[type=radio]:nth-of-type(4) + section label[for*="image-"] {top: -21px;right: 181px;}
+input[type=radio]:nth-of-type(4) + section label[for*="image-"] {top: -14px;right: 181px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(3)):checked ~
-input[type=radio]:nth-of-type(3) + section label[for*="image-"] {top: -42px;right: 251px;}
+input[type=radio]:nth-of-type(3) + section label[for*="image-"] {top: -35px;right: 251px;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(2)):checked ~
-input[type=radio]:nth-of-type(2) + section label[for*="image-"] {top: -50px;right: 309px;}
+input[type=radio]:nth-of-type(2) + section label[for*="image-"] {top: -43px;right: 309px;}
 /*end red 3d navbar*/
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:checked) + section .bio-image {opacity: 0.2;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section .main-content {
 	color: #fcfcfc;
 	background: #1d1f2b;
 	z-index: 9000;
-	top:89px !important;
-	left: 89px !important;
+	top:89px;
+	left: 89px;
 }
 /*clicked crazy face*/
-input[type=checkbox]:checked + label {content: url('../svg/upset.svg');}
+input[type=checkbox] ~ .main-wrapper label#logo:after {content: "OFF";}
+input[type=checkbox]:checked ~ .main-wrapper label#logo:after {content: "ON";}
 input[type=checkbox]:checked ~ .main-wrapper span.icon {background: #c12451;}
 input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
 input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
@@ -92,8 +94,7 @@ input[type=checkbox]:checked ~ .main-wrapper section .main-content{
 		-17px -17px 0 #1d1f2b,
 		-18px -18px 0 #c12451,
 		-19px -19px 0 #1d1f2b,
-		-20px -20px 0 #c12451,
-		-21px -21px 0 #1d1f2b;
+		-20px -20px 0 #c12451;
 }
 /*rotating content*/
 input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) .main-content {top:5px; left: 5px;}

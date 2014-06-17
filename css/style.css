@@ -3,11 +3,8 @@
   font-family: 'entypo', sans-serif;
 }
  /*transitions*/
-.hide {transition: opacity .2s ease-in}
-div.main-content {transition: background .25s ease-in, top .25s ease-in, left .25s ease-in, width .25s ease-in, height .25s ease-in, opacity .25s ease-in;}
-label[for*="image-"] {transition: background .25s ease-in, top .25s ease-in, right .25s ease-in, width .25s ease-in, height .25s ease-in, opacity .25s ease-in;}
-section{transition: padding .25s;}
-.main-content, .footer {transition: padding 1s;}
+div.main-content {transition: top .25s ease-in, left .25s ease-in}
+label[for*="image-"] {transition: top .25s ease-in, right .25s ease-in}
  /*end transitions*/
 
 html, body {
@@ -20,7 +17,7 @@ html, body {
 
 div.main-wrapper, div.main-wrapper section {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -37,6 +34,7 @@ div.main-content {
 	position: absolute;
 	left: 0;
 	top: 0;
+  z-index: 199;
 	background: #101112;
 	opacity: 1;
 	border-top: 1px solid #c12451;
@@ -181,8 +179,8 @@ span.icon {
 .down-1-row {
   padding-top: 166px;
 }
-.down-2-row {
-  padding-top: 332px;
+.hex-group {
+  float: left;
 }
 /*end hex*/
 

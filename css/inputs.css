@@ -1,11 +1,9 @@
 /*input globals*/
 .hide-keep-functionality {position: absolute;top: -9999px;left: -9999px;z-index: 1337;}
-
 /* input right clicker */
 label[for*="image-"] {
 	position: absolute;
-	z-index: 9001;
-	font-size: 1.125em;
+	z-index: 200;
 	width: 100px;
 	text-align: center;
 	moz-user-select: none;
@@ -16,15 +14,9 @@ label[for*="image-"] {
 
 /* input logo clicker */
 label#logo {
-	position: fixed;
-	top: 20px;
-	left: 20px;
-	height: 100px;
-	width: 100px;
-	background: rgba(55,245,155, 0.3);
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+	position: absolute;
+	top: -62px;
+	right: 0;
 	z-index: 9999;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -32,4 +24,3 @@ label#logo {
 	cursor: pointer;
 }
 /*default face*/
-label#logo:before {content: url('../svg/happy.svg');}
