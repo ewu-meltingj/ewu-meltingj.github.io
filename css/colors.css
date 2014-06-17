@@ -29,7 +29,7 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper p {color: #222;}
 input[type=checkbox]:checked ~ .main-wrapper section label[for*="image-"] {background: #c12451;border: 1px solid #1d1f2b;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section .main-content {color: #fcfcfc;background: #1d1f2b;}
 /*clicked crazy face*/
-input[type=checkbox]:checked ~ .main-wrapper span.icon {background: #c12451;}
+input[type=checkbox]:checked ~ .main-wrapper span.icon {background-color: #c12451;}
 input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
 input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
 /*decrese width to compensate for faux 3d plud add box shadwos for cool feel*/

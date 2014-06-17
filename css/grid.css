@@ -1,6 +1,6 @@
 /*grid*/
 .grid-1-2 {
-	width: calc(50% - 20px);
+	width: calc(50% - 40px);
 }
 .grid-2-5 {
 	width: calc(40% - 25px);
@@ -18,5 +18,8 @@
 }
 div.grid-1-2, div.grid-3-5, div.grid-2-5, div.grid-full {
 	padding: 10px;
+}
+div.grid-1-2{
+	padding: 20px;
 }
 /*end grid*/
