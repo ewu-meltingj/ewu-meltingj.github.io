@@ -44,6 +44,7 @@
 	input[type=checkbox]:not(:checked) ~ .main-wrapper label#logo {top: -100px;}
 }
 @media only screen and (max-width:500px){
+	span.hyphen{display: block; visibility: hidden; height: 0; width: 0;}
 	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {right: 225px;}
 	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {right: 187px;}
 	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {right: 136px;}
