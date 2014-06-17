@@ -13,16 +13,42 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"] 
 	top: -40px;
 	background: #fff;
 	padding: 5px 0 5px 0;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
 }
-input[type=checkbox]:not(:checked) ~ .main-wrapper section:first-of-type label[for*="image-"] {border-right: 1px solid #ccc;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper section:last-of-type label[for*="image-"] {border-left: 1px solid #ccc;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {right: 0px;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {right: 100px;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {right: 200px;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {right: 300px;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {right: 400px;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"]:after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	border-bottom: 10px solid #ccc;
+	height: 0;
+	width: 100%;
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section:last-of-type label[for*="image-"]:after {
+	border-left: 10px solid transparent;
+	width: calc(100% - 10px);
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section:first-of-type label[for*="image-"]:after {
+	border-right: 10px solid transparent;
+	width: calc(100% - 10px);
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper .content-wrapper:after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	border-bottom: 10px solid #ccc;
+	height: 0;
+	width: 100%;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	width: calc(100% - 20px);
+}
+
+input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {right: 10px;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {right: 110px;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {right: 210px;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {right: 310px;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {right: 410px;}
 /*end vanilla navbar*/
 input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:not(:checked) + section .main-content {display: none;}
 
