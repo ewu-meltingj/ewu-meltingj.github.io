@@ -1,17 +1,27 @@
 input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
 	top: 0;
 	left: 0;
-	background: rgba(255,255,255,0.95);
 	border-radius: 0;
-	color: rgba(0,0,0,1);
 	font-weight: 400;
-	/*border: 10px solid #fff;*/
 	border: 0px;
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section span.bio-block {
+	margin: 0;
+	text-transform: uppercase;
+	display: block;
+	font-weight: 400;
+	color: #222;
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section .bio-block span {
+	display: inline-block;
+	height: 100%;
+	background: #88c3ad;
+	padding: 0px 6px;
+	font-size: 2em;
 }
 /*vanilla navbar*/
 input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"] {
-	top: -40px;
-	background: #fff;
+	top: -39px;
 	padding: 5px 0 5px 0;
 }
 input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"]:after {
@@ -19,9 +29,15 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"]:
 	position: absolute;
 	top: -10px;
 	left: 0px;
-	border-bottom: 10px solid #ccc;
+	border-bottom: 10px solid #0197b5;
 	height: 0;
 	width: 100%;
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"]:after {
+	border-bottom: 10px solid #0197b5;
+}
+/*selected from nav top*/
+input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"] {
 }
 input[type=checkbox]:not(:checked) ~ .main-wrapper section:last-of-type label[for*="image-"]:after {
 	border-left: 10px solid transparent;
@@ -36,7 +52,7 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper .content-wrapper:after {
 	position: absolute;
 	top: -10px;
 	left: 0px;
-	border-bottom: 10px solid #ccc;
+	border-bottom: 10px solid #0197b5;
 	height: 0;
 	width: 100%;
 	border-left: 10px solid transparent;
@@ -54,7 +70,6 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:not(:checke
 
 /*red 3d navbar*/
 input[type=checkbox]:checked ~ .main-wrapper section label[for*="image-"] {
-	background: #c12451;
 	padding: 5px 0 2px 0;
 	border: 1px solid #1d1f2b;
 	border-bottom: 0px;
@@ -83,18 +98,11 @@ input[type=radio]:nth-of-type(2) + section label[for*="image-"] {top: -43px;righ
 /*end red 3d navbar*/
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:checked) + section .bio-image {opacity: 0.2;}
 input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section .main-content {
-	color: #fcfcfc;
-	background: #1d1f2b;
 	z-index: 9000;
 	top:89px;
 	left: 89px;
 }
 /*clicked crazy face*/
-input[type=checkbox] ~ .main-wrapper label#logo:after {content: "OFF";}
-input[type=checkbox]:checked ~ .main-wrapper label#logo:after {content: "ON";}
-input[type=checkbox]:checked ~ .main-wrapper span.icon {background: #c12451;}
-input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
-input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
 input[type=checkbox]:checked ~ .main-wrapper .hide-in-cool-mode {display: none;visibility: hidden;}
 
 /*decrese width to compensate for faux 3d plud add box shadwos for cool feel*/

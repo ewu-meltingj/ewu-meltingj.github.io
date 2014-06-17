@@ -14,7 +14,6 @@
 	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-two{display: none;visibility: hidden;}
 	.clearfix-step-two{ display: block; }.clearfix-step-two:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 	/*end defaults*/
-	.bio-image{height: 310px;}
 	span.hyphen-header{display: block; visibility: hidden; height: 0; width: 0;}
 
 }
@@ -25,7 +24,6 @@
 	input[type=checkbox]:checked ~ .main-wrapper .hide-checked-three{display: none;visibility: hidden;}
 	.clearfix-step-three{ display: block; }.clearfix-step-three:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 	/*end defaults*/
-	.bio-image{height: 330px;}
 	span.icon {margin-left: calc(50% - 45px); margin-bottom: 10px;}
 	span.hyphen{display: block; visibility: hidden; height: 0; width: 0;}
 }

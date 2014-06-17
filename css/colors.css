@@ -1,0 +1,35 @@
+input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
+	background: #fff;
+	color: rgba(0,0,0,1);
+}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section .bio-text {background: #fff;}
+input[type=checkbox]:checked ~ .main-wrapper section .bio-text {background: #1d1f2b;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper .info-header span {color: #fff;}
+
+
+/*main-nav unchecked*/
+input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"] {background: #fff;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"]:after {border-bottom: 10px solid #5a957f;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"] {background: #88c3ad;color: #fff;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"]:after {border-bottom: 10px solid #5a957f;}
+
+/*info-header unchecked*/
+input[type=checkbox]:not(:checked) ~ .main-wrapper .info-header {background: #88c3ad;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper .content-wrapper:after {border-bottom: 10px solid #5a957f;}
+
+/*text color unchecked*/
+input[type=checkbox]:not(:checked) ~ .main-wrapper h1,
+input[type=checkbox]:not(:checked) ~ .main-wrapper h2,
+input[type=checkbox]:not(:checked) ~ .main-wrapper h3 {color: #444;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper p {color: #222;}
+
+/*vanilla navbar*/
+/*selected from nav top*/
+
+input[type=checkbox]:checked ~ .main-wrapper section label[for*="image-"] {background: #c12451;border: 1px solid #1d1f2b;}
+input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section .main-content {color: #fcfcfc;background: #1d1f2b;}
+/*clicked crazy face*/
+input[type=checkbox]:checked ~ .main-wrapper span.icon {background: #c12451;}
+input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
+input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
+/*decrese width to compensate for faux 3d plud add box shadwos for cool feel*/

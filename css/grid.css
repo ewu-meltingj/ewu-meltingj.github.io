@@ -1,6 +1,6 @@
 /*grid*/
 .grid-1-2 {
-	width: calc(50% - 25px);
+	width: calc(50% - 20px);
 }
 .grid-2-5 {
 	width: calc(40% - 25px);
