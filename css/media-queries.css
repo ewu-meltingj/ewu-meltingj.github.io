@@ -43,29 +43,25 @@
 	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(3) label[for*="image-"]:after {border-left: 10px solid transparent;width: calc(100% - 10px);}
 	input[type=checkbox]:not(:checked) ~ .main-wrapper label#logo {top: -100px;}
 }
-@media only screen and (max-width:560px){
-	/*label[for*="image-"] {font-size: 70%;}
-	div.content-wrapper {min-width: 430px;}
-	label[for*="image-"] {width: 70px;}
-	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {right: 70px;}
-	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {right: 140px;}
-	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {right: 210px;}
-	input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {right: 280px;}
-
-	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"] {top: 68px;}
-	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {top: -37px;}
-	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {top: -29px;}
-	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {top: -8px;}
-	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {top: 13px;}
-	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {top: 68px;}
+@media only screen and (max-width:500px){
+	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {right: 225px;}
+	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {right: 187px;}
+	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {right: 136px;}
+	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(4) label[for*="image-"] {right: 85px;}
+	input[type=checkbox]:checked ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {right: 0px;}
+	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(5):checked + section label[for*="image-"] {right: 0px;}
+	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(4):checked + section label[for*="image-"] {right: 30px;}
+	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(3):checked + section label[for*="image-"] {right: 60px;}
+	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(2):checked + section label[for*="image-"] {right: 90px;}
+	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:nth-of-type(1):checked + section label[for*="image-"] {right: 120px;}
 	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(5)):checked ~
-	input[type=radio]:nth-of-type(5) + section label[for*="image-"] {top: 13px;}
+	input[type=radio]:nth-of-type(5) + section label[for*="image-"] {right: 85px;}
 	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(4)):checked ~
-	input[type=radio]:nth-of-type(4) + section label[for*="image-"] {top: -8px;}
+	input[type=radio]:nth-of-type(4) + section label[for*="image-"] {right: 136px;}
 	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(3)):checked ~
-	input[type=radio]:nth-of-type(3) + section label[for*="image-"] {top: -29px;}
+	input[type=radio]:nth-of-type(3) + section label[for*="image-"] {right: 187px;}
 	input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:not(:nth-of-type(2)):checked ~
-	input[type=radio]:nth-of-type(2) + section label[for*="image-"] {top: -37px;}*/
+	input[type=radio]:nth-of-type(2) + section label[for*="image-"] {right: 225px;}
 }
 @media only screen and (max-width:803px){
 	input[type=checkbox]:not(:checked) ~ .main-wrapper .hex-wrapper .hex-group:nth-of-type(4) {margin-top: -105px;margin-left: 52px;}
