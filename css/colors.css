@@ -54,9 +54,41 @@ div.main-content {background: #101112;border-top: 1px solid #c12451;}
 .info-header {background: #fff;}
 
 
+.cat {
+	position: absolute;
+	top: 0;
+	left: -80px;
+	z-index: 0;
+}
+.cat-back h1 {
+	font-size: 3em;
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	z-index: 100;
+	text-align: right;
+	margin: 10px;
+	color: #555 !important;
+	text-shadow: 
+		-2px -2px 0 #f9e8f1,
+		-4px -4px 0 #f2bcd6;
+}
+.cat-back {
+	background: #f7f7f7;
+	border-color: #f9e8f1;
 
-
-
-
+}
+.cat-pink{
+	fill: #f2bcd6;
+}
+.cat-white{
+	fill: #fff;
+}
+.cat-eye{
+	fill: #BABABA;
+}
+.cat-whiskers{
+	fill: #DAD9DD;
+}
 
 
