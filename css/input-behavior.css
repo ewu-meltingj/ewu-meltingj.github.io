@@ -10,12 +10,10 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section span.bio-block {
 	text-transform: uppercase;
 	display: block;
 	font-weight: 400;
-	color: #222;
 }
 input[type=checkbox]:not(:checked) ~ .main-wrapper section .bio-block span {
 	display: inline-block;
 	height: 100%;
-	background: #88c3ad;
 	padding: 0px 6px;
 	font-size: 2em;
 }
@@ -29,12 +27,8 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"]:
 	position: absolute;
 	top: -10px;
 	left: 0px;
-	border-bottom: 10px solid #0197b5;
 	height: 0;
 	width: 100%;
-}
-input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"]:after {
-	border-bottom: 10px solid #0197b5;
 }
 /*selected from nav top*/
 input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"] {
@@ -52,14 +46,12 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper .content-wrapper:after {
 	position: absolute;
 	top: -10px;
 	left: 0px;
-	border-bottom: 10px solid #0197b5;
 	height: 0;
 	width: 100%;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	width: calc(100% - 20px);
 }
-
 input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(1) label[for*="image-"] {right: 10px;}
 input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(2) label[for*="image-"] {right: 110px;}
 input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(3) label[for*="image-"] {right: 210px;}
@@ -67,11 +59,9 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(4) label[
 input[type=checkbox]:not(:checked) ~ .main-wrapper section:nth-of-type(5) label[for*="image-"] {right: 410px;}
 /*end vanilla navbar*/
 input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:not(:checked) + section .main-content {display: none;}
-
 /*red 3d navbar*/
 input[type=checkbox]:checked ~ .main-wrapper section label[for*="image-"] {
 	padding: 5px 0 2px 0;
-	border: 1px solid #1d1f2b;
 	border-bottom: 0px;
 	border-radius: 5px 5px 0 0;
 	z-index: 9001;

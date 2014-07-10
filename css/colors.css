@@ -2,35 +2,66 @@ input[type=checkbox]:not(:checked) ~ .main-wrapper section .main-content {
 	background: #fff;
 	color: rgba(0,0,0,1);
 }
+input[type=checkbox]:not(:checked) ~ .main-wrapper section span.bio-block {color: #222;}
+input[type=checkbox]:not(:checked) ~ .main-wrapper section .bio-block span {background: #88c3ad;}
 input[type=checkbox]:not(:checked) ~ .main-wrapper section .bio-text {background: #fff;}
 input[type=checkbox]:checked ~ .main-wrapper section .bio-text {background: #1d1f2b;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper .info-header span {color: #fff;}
+input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
+
+/*important*/
+div.main-content {background: #101112;border-top: 1px solid #c12451;}
 
 
 /*main-nav unchecked*/
-input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"] {background: #fff;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper section label[for*="image-"]:after {border-bottom: 10px solid #5a957f;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"] {background: #88c3ad;color: #fff;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper input[type=radio]:checked + section label[for*="image-"]:after {border-bottom: 10px solid #5a957f;}
+section label[for*="image-"] {background: #fff;}
+section label[for*="image-"]:after {border-bottom: 10px solid #5a957f;}
+input[type=radio]:checked + section label[for*="image-"] {background: #88c3ad;color: #fff;}
+input[type=radio]:checked + section label[for*="image-"]:after {border-bottom: 10px solid #5a957f;}/*0197b5*/
+
+/*main-nav checked*/
+input[type=checkbox]:checked ~ .main-wrapper section label[for*="image-"] {background: #c12451;border: 1px solid #1d1f2b; border-bottom: 0; color: #000;}
+input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section .main-content {color: #fcfcfc;background: #1d1f2b;}
 
 /*info-header unchecked*/
-input[type=checkbox]:not(:checked) ~ .main-wrapper .info-header {background: #88c3ad;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper .content-wrapper:after {border-bottom: 10px solid #5a957f;}
+.main-wrapper .info-header {background: #88c3ad;}
+.main-wrapper .content-wrapper:after {border-bottom: 10px solid #5a957f;}/*0197b5*/
+.main-wrapper .info-header span {color: #fff;}
+
+/*info-header checked*/
+input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
+input[type=checkbox]:checked ~ .main-wrapper .info-header span {color: #000;}
+
 
 /*text color unchecked*/
-input[type=checkbox]:not(:checked) ~ .main-wrapper h1,
-input[type=checkbox]:not(:checked) ~ .main-wrapper h2,
-input[type=checkbox]:not(:checked) ~ .main-wrapper h3 {color: #444;}
-input[type=checkbox]:not(:checked) ~ .main-wrapper p {color: #222;}
+.main-wrapper h1,
+.main-wrapper h2,
+.main-wrapper h3 {color: #444;}
+.main-wrapper p {color: #222;}
+em {background-color: #88c3ad;}
+a:link, a:hover, a:visited, a:active {color: #5a957f;}
 
-/*work edu icons unchecked*/
-input[type=checkbox]:not(:checked) ~ .main-wrapper span.icon {background-color: #fff; box-shadow: 0 0 0 5px #fff, 0 0 0 7px #5a957f;}
+/*text color checked*/
+input[type=checkbox]:checked ~ .main-wrapper h1,
+input[type=checkbox]:checked ~ .main-wrapper h2,
+input[type=checkbox]:checked ~ .main-wrapper h3 {color: #fff;}
+input[type=checkbox]:checked ~ .main-wrapper p {color: #eee;}
+input[type=checkbox]:checked ~ .main-wrapper em {background-color: #c12451;}
+input[type=checkbox]:checked ~ .main-wrapper a:link, 
+input[type=checkbox]:checked ~ .main-wrapper a:hover, 
+input[type=checkbox]:checked ~ .main-wrapper a:visited, 
+input[type=checkbox]:checked ~ .main-wrapper a:active {color: #c12451;}
+
+
+/*workedu unchecked*/
+.tree-item-info {border-left: 1px solid #88c3ad;}
+
+/*workedu checked*/
+input[type=checkbox]:checked ~ .main-wrapper .tree-item-info {border-left: 1px solid #c12451;}
 
 /*hexagons unchecked*/
-input[type=checkbox]:checked ~ .main-wrapper .hex-wrapper p {color: #fff;}
-input[type=checkbox]:checked ~ .main-wrapper .hex-wrapper .hexagon {background: #88c3ad;}
-input[type=checkbox]:checked ~ .main-wrapper .hex-wrapper .hexagon:before {border-bottom: 25px solid #88c3ad;}
-input[type=checkbox]:checked ~ .main-wrapper .hex-wrapper .hexagon:after {border-top: 25px solid #88c3ad;}
+.hex-wrapper .hexagon {background: #88c3ad;}
+.hex-wrapper .hexagon:before {border-bottom: 25px solid #88c3ad;}
+.hex-wrapper .hexagon:after {border-top: 25px solid #88c3ad;}
 
 /*hexagons checked*/
 input[type=checkbox]:checked ~ .main-wrapper .hex-wrapper p {color: #fff;}
@@ -39,56 +70,7 @@ input[type=checkbox]:checked ~ .main-wrapper .hex-wrapper .hexagon:before {borde
 input[type=checkbox]:checked ~ .main-wrapper .hex-wrapper .hexagon:after {border-top: 25px solid #c12451;}
 
 
-/*vanilla navbar*/
-/*selected from nav top*/
 
-input[type=checkbox]:checked ~ .main-wrapper section label[for*="image-"] {background: #c12451;border: 1px solid #1d1f2b; border-bottom: 0;}
-input[type=checkbox]:checked ~ .main-wrapper input[type=radio]:checked + section .main-content {color: #fcfcfc;background: #1d1f2b;}
-/*clicked crazy face*/
-input[type=checkbox]:checked ~ .main-wrapper span.icon {background-color: #c12451;}
-input[type=checkbox]:checked ~ .main-wrapper .info-header {background: #c12451; color: #000;}
-input[type=checkbox]:checked ~ .full-background {background: #ae1c46;}
 /*decrese width to compensate for faux 3d plud add box shadwos for cool feel*/
-
-div.main-content {background: #101112;border-top: 1px solid #c12451;}
-.info-header {background: #fff;}
-
-
-.cat {
-	position: absolute;
-	top: 0;
-	left: -80px;
-	z-index: 0;
-}
-.cat-back h1 {
-	font-size: 3em;
-	position: absolute;
-	right: 0;
-	bottom: 0px;
-	z-index: 100;
-	text-align: right;
-	margin: 10px;
-	color: #555 !important;
-	text-shadow: 
-		-2px -2px 0 #f9e8f1,
-		-4px -4px 0 #f2bcd6;
-}
-.cat-back {
-	background: #f7f7f7;
-	border-color: #f9e8f1;
-
-}
-.cat-pink{
-	fill: #f2bcd6;
-}
-.cat-white{
-	fill: #fff;
-}
-.cat-eye{
-	fill: #BABABA;
-}
-.cat-whiskers{
-	fill: #DAD9DD;
-}
 
 

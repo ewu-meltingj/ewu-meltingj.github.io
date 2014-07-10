@@ -38,3 +38,8 @@ a:link, a:hover, a:visited, a:active {
   text-decoration: none;
 }
  /*end base type */
+
+em {
+  font-style: normal;
+  padding: 0 3px 2px 3px;
+}
